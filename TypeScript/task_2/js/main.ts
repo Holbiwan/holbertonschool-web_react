@@ -1,11 +1,11 @@
-// Interface for Directors
+// Interface Directors
 interface DirectorInterface {
     workFromHome(): string;
     getCoffeeBreak(): string;
     workDirectorTasks(): string;
   }
   
-  // Interface for Teachers
+  // Interface Teachers
   interface TeacherInterface {
     workFromHome(): string;
     getCoffeeBreak(): string;
@@ -83,4 +83,5 @@ interface DirectorInterface {
       return "Teaching History";
     }
   }
+
   
