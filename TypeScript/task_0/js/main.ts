@@ -17,18 +17,10 @@ const student1: Student = {
 // Creating the second student object according to the Student interface
 const student2: Student = {
     first_name: 'Rafael',
-    lastName: 'Nadal', // Error: Incorrect use of 'lastName' instead of 'name'
-    age: 38,
-    location: 'Manacor',
-};
-
-// Correction: Renaming 'lastName' to 'name' to match the Student interface
-const student2: Student = {
-    first_name: 'Rafael',
     name: 'Nadal',
     age: 38,
     location: 'Manacor',
-}; 
+};
 
 // Creating a list of students containing the two student objects defined above
 const studentsList: Array<Student> = [student1, student2];
