@@ -1,2 +1,1 @@
-README 
-holbertonschool-web_react
+README Web react
