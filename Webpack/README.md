@@ -1,6 +1,6 @@
-![webpack pic](https://zupimages.net/up/24/33/ajqq.png)
-
 # Webpack
+
+![webpack pic](https://zupimages.net/up/24/33/ajqq.png)
 
 ## General
 
