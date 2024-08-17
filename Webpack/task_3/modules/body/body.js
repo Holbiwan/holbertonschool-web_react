@@ -2,15 +2,19 @@ import $ from 'jquery';
 import _ from 'lodash';
 import './body.css';
 
-$('body').append('<p>Dashboard data for the students</p>');
-$('body').append('<button>Click here to get started</button>');
-$('body').append('<p id="count"></p>');
 
-let counter = 0;
+$(() => {
+  $('body').append(`
+    <button>Click here to get started</button>
+    <p id='count'></p>
+  `);
 
-const updateCounter = () => {
-  counter++;
-  $('#count').html(`${counter} clicks on the button`);
-};
+  let count = 0;
+  function updateCounter() {
+    count++;
+    $('#count').text(`${count} clicks on the button`);
+  }
 
-$('button').on('click', _.debounce(updateCounter, 500));
+  const debouncedUpdateCounter = _.debounce(updateCounter, 500);
+  $('button').click(debouncedUpdateCounter);
+})
