@@ -1,5 +1,5 @@
 # React Intro
-[![React](https://zupimages.net/up/24/34/7z0w.png)
+![React](https://zupimages.net/up/24/34/7z0w.png)
 
 ##  Project Overview
 
