@@ -1,14 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import ReactDOM from 'react-dom/client';
 
-console.log('Hello, Webpack!');
-console.log('Hello, Babel!');
+const App = () => <h1>Bienvenue sur votre tableau de bord React avec Webpack!</h1>;
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById('app'));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('app') // Assurez-vous que l'ID correspond à celui de votre index.html
+  </React.StrictMode>
 );
