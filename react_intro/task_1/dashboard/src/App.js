@@ -1,25 +1,22 @@
-// task_1/dashboard/src/App.js
-
-import React from 'react';
+import logo from './holberton_logo.jpg';
 import './App.css';
-import holbertonLogo from './holberton-logo.jpg';
-import { getFullYear, getFooterCopy } from './utils';
+import { getFooterCopy, getFullYear } from './utils';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={holbertonLogo} className="App-logo" alt="logo" />
-        <h1>School dashboard</h1>
-      </header>
-      <body className="App-body">
+    <>
+      <div className="App-header">
+        <img src={logo} alt='Holberton Logo'></img>
+        <p>School Dashboard</p>
+      </div>
+      <div className='App-body'>
         <p>Login to access the full dashboard</p>
-      </body>
-      <footer className="App-footer">
-        <p>Copyright {getFullYear()} - {getFooterCopy(true)}</p>
-      </footer>
-    </div>
-  );
+      </div>
+      <div className='App-footer'>
+        <p>Copyright {getFullYear()} - {getFooterCopy()}</p>
+      </div>
+    </>
+  )
 }
 
 export default App;

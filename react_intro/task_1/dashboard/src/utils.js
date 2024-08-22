@@ -1,11 +1,12 @@
-// task_1/dashboard/src/utils.js
-
-// Fonction pour obtenir l'année en cours
 export function getFullYear() {
-  return new Date().getFullYear();
+  const d = new Date();
+  return d.getFullYear();
 }
 
-// Fonction pour obtenir le texte du footer
 export function getFooterCopy(isIndex) {
-  return isIndex ? 'Holberton School' : 'Holberton School main dashboard';
+  if (isIndex) {
+    return 'Holberton School'
+  } else {
+    return 'Holberton School Main Dashboard'
+  }
 }
