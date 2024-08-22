@@ -1,44 +1,48 @@
-const path = require("path");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
-  devtool: "inline-source-map",
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    filename: "bundle.js",
-    path: path.resolve("./dist"),
-  },
-  devServer: {
-    hot: true,
-    contentBase: path.resolve("./dist"),
-    compress: true,
-    port: 8564,
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, '../dist'),
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        loader: "babel-loader",
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-        use: ["babel-loader"],
-      },
-      {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(png|jpg|gif|svg)$/,
         use: [
-          "file-loader",
           {
-            loader: "image-webpack-loader",
+            loader: 'file-loader',
             options: {
-              bypassOnDebug: true, // webpack@1.x
-              disable: true, // webpack@2.x and newer
+              name: '[name].[ext]',
+              outputPath: 'images/',
             },
           },
+          'image-webpack-loader',
         ],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
       },
     ],
   },
+  devServer: {
+    contentBase: path.resolve(__dirname, '../dist'),
+    hot: true,
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
+  devtool: 'inline-source-map',
 };

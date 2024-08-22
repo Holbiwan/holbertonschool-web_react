@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -16,7 +17,9 @@
     "build": "react-scripts build",
     "test-react": "react-scripts test",
     "test": "mocha --require @babel/register --exit 'test/**/*.test.js'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +38,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": "https://Holbiwan.github.io/holbertonschool-web_react",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "image-webpack-loader": "^8.1.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }
