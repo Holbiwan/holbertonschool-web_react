@@ -28,4 +28,4 @@ At the end of this project, you will be able to:
 
 ##  🙇 Author
 
-[Sabrina PAPEAU](https://github.com/Holbiwan) - Holberton School
+[Sabrina PAPEAU](https://github.com/Holbiwan)
