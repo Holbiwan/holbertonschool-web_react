@@ -1,7 +1,7 @@
 ../../.aws/
 ../../.cache/
-../../.config/
-../../.local/
-../../backup_project.zip
+../../.vscode-server/
 ../../snap/
+../../temp_project/
 ../../venv/
+../../node_modules/
