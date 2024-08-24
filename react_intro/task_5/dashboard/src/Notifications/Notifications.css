@@ -1,0 +1,24 @@
+.Notifications {
+    border: 2px dashed #e1484c;
+    padding: 10px;
+    width: 400px;
+  }
+  
+  .Notifications p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Notifications ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .Notifications li[data-priority="default"] {
+    color: blue;
+  }
+  
+  .Notifications li[data-priority="urgent"] {
+    color: red;
+  }
+  
