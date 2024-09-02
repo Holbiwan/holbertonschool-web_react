@@ -1,15 +1,23 @@
-export function getFullYear() {
-  return new Date().getFullYear();
-}
+/**
+ * getFullYear - Returns the current year.
+ *
+ * @returns {number} - The current year.
+ */
+export const getFullYear = () => new Date().getFullYear();
 
-export function getFooterCopy(isIndex) {
-  if (isIndex) {
-      return 'Holberton School';
-  } else {
-      return 'Holberton School main dashboard';
-  }
-}
+/**
+ * getFooterCopy - Returns the footer copy based on the page type.
+ *
+ * @param {boolean} isIndex - Indicates whether the page is the index page.
+ * @returns {string} - The footer copy text.
+ */
+export const getFooterCopy = (isIndex) =>
+	isIndex ? "Holberton School" : "Holberton School main dashboard";
 
-export function getLatestNotification() {
-  return "<strong>Urgent requirement</strong> - complete by EOD";
-}
+/**
+ * getLatestNotification - Returns the latest urgent notification.
+ *
+ * @returns {string} - The HTML-formatted urgent notification.
+ */
+export const getLatestNotification = () =>
+	`<strong>Urgent requirement</strong> - complete by EOD`;
