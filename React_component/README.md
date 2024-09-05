@@ -1,1 +1,2 @@
-README React component
+React component
+README
