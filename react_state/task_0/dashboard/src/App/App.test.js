@@ -1,8 +1,16 @@
 import { shallow, mount } from "enzyme";
 import React from "react";
 import App from "./App";
+import { StyleSheetTestUtils } from "aphrodite";
 
 describe("<App />", () => {
+  beforeAll(() => {
+    StyleSheetTestUtils.suppressStyleInjection();
+  });
+  afterAll(() => {
+    StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
+  });
+
   it("App renders without crashing", () => {
     const wrapper = shallow(<App />);
     expect(wrapper.exists()).toEqual(true);
@@ -57,5 +65,36 @@ describe("<App />", () => {
     expect(logout).toHaveBeenCalled();
 
     jest.restoreAllMocks();
+  });
+
+  it("Has default state for displayDrawer false", () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.state().displayDrawer).toEqual(false);
+  });
+
+  it("displayDrawer changes to true when calling handleDisplayDrawer", () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.state().displayDrawer).toEqual(false);
+
+    const instance = wrapper.instance();
+
+    instance.handleDisplayDrawer();
+
+    expect(wrapper.state().displayDrawer).toEqual(true);
+  });
+
+  it("displayDrawer changes to false when calling handleHideDrawer", () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.state().displayDrawer).toEqual(false);
+
+    // const instance = wrapper.instance();
+
+    wrapper.instance().handleDisplayDrawer();
+
+    expect(wrapper.state().displayDrawer).toEqual(true);
+
+    wrapper.instance().handleHideDrawer();
+
+    expect(wrapper.state().displayDrawer).toEqual(false);
   });
 });
