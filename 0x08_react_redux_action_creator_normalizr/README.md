@@ -1,5 +1,4 @@
-## :open_file_folder: 0x08. React Redux action creator+normalizr
-
+## :open_file_folder: You get an action item ... Everyone gets an action item 🚶
 ![](https://zupimages.net/up/24/39/bsu7.png)
 
 ## :closed_book: Resources
