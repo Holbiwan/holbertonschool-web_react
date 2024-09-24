@@ -1,6 +1,4 @@
-# 0x08. React Redux action creator+normalizr
-
-## :open_file_folder: Specializations - Web Stack programming ― Back-end
+## :open_file_folder: 0x08. React Redux action creator+normalizr
 
 ![](https://zupimages.net/up/24/39/bsu7.png)
 
