@@ -1,11 +1,8 @@
-## 0x08. React Redux action creator+normalizr
+# 0x08. React Redux action creator+normalizr
 
-### :open_file_folder: Specializations - Web Stack programming ― Back-end
+## :open_file_folder: Specializations - Web Stack programming ― Back-end
 
-
-<p align="center">
-    <img src="https://martinc.me/images/allpost/react-redux.jpg" alt="React + Redux image">
-</p>
+![](https://zupimages.net/up/24/39/bsu7.png)
 
 ## :closed_book: Resources
 
@@ -16,9 +13,8 @@
 * [Async Actions](https://redux.js.org/tutorials/fundamentals/part-6-async-logic)
 * [Writing tests for Redux](https://redux.js.org/usage/writing-tests)
 
-
-
 ## :bulb: Learning Objectives
+
 At the end of this project, you are expected to be able to explain to anyone, **without the help of Google:**
 
 * Normalizr’s purpose and how to use it
