@@ -32,5 +32,4 @@ At the end of this project, you are expected to be able to explain to anyone, **
 ## :black_nib: Author
 
 Author  : **Sabrina PAPEAU** - [Github](https://github.com/Holbiwan)
-Email   : <sabrina.papeau@gmail.com>
 Twitter : <https://twitter.com/Holbiwan>
