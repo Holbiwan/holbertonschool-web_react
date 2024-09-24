@@ -1,7 +1,7 @@
 ## :open_file_folder: You get an action item ... Everyone gets an action item 🚶
 ![](https://zupimages.net/up/24/39/bsu7.png)
 
-## :closed_book: Resources
+## 📕 Resources
 
 * [Normalizr](https://github.com/paularmstrong/normalizr)
 * [Normalizing State Shape](https://redux.js.org/usage/structuring-reducers/normalizing-state-shape)
@@ -10,7 +10,7 @@
 * [Async Actions](https://redux.js.org/tutorials/fundamentals/part-6-async-logic)
 * [Writing tests for Redux](https://redux.js.org/usage/writing-tests)
 
-## :bulb: Learning Objectives
+## 🧐 Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, **without the help of Google:**
 
