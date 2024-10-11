@@ -30,5 +30,5 @@ At the end of this project, you are expected to be able to explain to anyone, **
 ## :black_nib: Author
 
 **Sabrina Papeau** 
-* [LinkedIn](https://www.linkedin.com/in/sabrina-papeau-/)
+* [LinkedIn](https://www.linkedin.com/in/sabrina-p006566185/)
 * [GitHub](https://github.com/Holbiwan)
