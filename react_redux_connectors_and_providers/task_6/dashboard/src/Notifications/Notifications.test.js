@@ -7,6 +7,7 @@ import notificationsNormalizer from "../schema/notifications";
 import { Map, fromJS } from "immutable";
 import { getUnreadNotifications } from "../selectors/notificationSelector";
 
+// const NOTIFICATIONS
 const NOTIFICATIONS = [
   {
     id: "5debd76480edafc8af244228",
