@@ -6,6 +6,7 @@ import { StyleSheetTestUtils } from "aphrodite";
 import notificationsNormalizer from "../schema/notifications";
 import { Map, fromJS } from "immutable";
 
+// Data representing a list of notifications
 const NOTIFICATIONS = [
   {
     id: "5debd76480edafc8af244228",
@@ -69,6 +70,7 @@ const NOTIFICATIONS = [
   },
 ];
 
+// Describe the test suite
 describe("<Notifications />", () => {
   let listNotifications;
   let latestNotification;
